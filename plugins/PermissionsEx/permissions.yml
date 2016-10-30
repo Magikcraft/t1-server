@@ -1,0 +1,23 @@
+groups:
+  Guest:
+    default: true
+    build: false
+    permissions:
+    - essentials.help
+    - essentials.rules
+    - essentials.motd
+    - modifyworld.chat
+  Admin:
+    default: false
+    prefix: '&f[&5Teacher&f]'
+    build: true
+    permissions:
+    - '*'
+    - -essentials.silentjoin.vanish
+schema-version: 1
+users:
+  8047ba5f-d056-453d-9fde-67278fb3ab06:
+    group:
+    - Admin
+    options:
+      name: hipppie125
