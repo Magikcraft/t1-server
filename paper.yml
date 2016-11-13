@@ -11,15 +11,15 @@
 
 config-version: 11
 settings:
-  load-permissions-yml-before-plugins: true
-  bungee-online-mode: true
   enable-player-collisions: true
+  bungee-online-mode: true
   sleep-between-chunk-saves: false
   region-file-cache-size: 256
   save-empty-scoreboard-teams: false
   incoming-packet-spam-threshold: 300
   min-chunk-load-threads: 2
   set-health-before-death-event: false
+  load-permissions-yml-before-plugins: true
 timings:
   enabled: true
   verbose: true
@@ -36,19 +36,37 @@ messages:
 world-settings:
   default:
     verbose: false
-    container-update-tick-rate: 1
-    disable-explosion-knockback: false
-    elytra-hit-wall-damage: true
-    keep-spawn-loaded: true
-    disable-thunder: false
+    baby-zombie-movement-speed: 0.5
+    all-chunks-are-slime-chunks: false
+    allow-leashing-undead-horse: false
+    keep-spawn-loaded-range: 8
+    auto-save-interval: -1
+    game-mechanics:
+      disable-chest-cat-detection: false
+      disable-end-credits: false
+    allow-non-player-entities-on-scoreboards: false
+    hopper:
+      push-based: false
+    nether-ceiling-void-damage: false
     skeleton-horse-thunder-spawn-chance: -1.0
     disable-ice-and-snow: false
     fire-physics-event-for-redstone: false
-    game-mechanics:
-      disable-end-credits: false
-      disable-chest-cat-detection: false
     spawner-nerfed-mobs-should-jump: false
     mob-spawner-tick-rate: 1
+    frosted-ice:
+      enabled: true
+      delay:
+        min: 20
+        max: 40
+    grass-spread-tick-rate: 1
+    use-alternate-fallingblock-onGround-detection: false
+    enable-old-tnt-cannon-behaviors: false
+    non-player-arrow-despawn-rate: -1
+    disable-explosion-knockback: false
+    elytra-hit-wall-damage: true
+    disable-thunder: false
+    keep-spawn-loaded: true
+    container-update-tick-rate: 1
     generator-settings:
       canyon: true
       caves: true
@@ -60,36 +78,8 @@ world-settings:
       temple: true
       village: true
       flat-bedrock: false
-    keep-spawn-loaded-range: 8
-    auto-save-interval: -1
-    frosted-ice:
-      enabled: true
-      delay:
-        min: 20
-        max: 40
-    grass-spread-tick-rate: 1
-    baby-zombie-movement-speed: 0.5
-    all-chunks-are-slime-chunks: false
-    allow-leashing-undead-horse: false
-    portal-search-radius: 128
-    nether-ceiling-void-damage: false
-    allow-non-player-entities-on-scoreboards: false
-    hopper:
-      push-based: false
-    use-alternate-fallingblock-onGround-detection: false
-    enable-old-tnt-cannon-behaviors: false
-    non-player-arrow-despawn-rate: -1
-    queue-light-updates: false
-    optimize-explosions: false
-    disable-teleportation-suffocation-check: false
     use-chunk-inhabited-timer: true
-    use-vanilla-world-scoreboard-name-coloring: false
-    delay-chunk-unloads-by: 10s
-    max-auto-save-chunks-per-tick: 24
     remove-corrupt-tile-entities: false
-    squid-spawn-height:
-      minimum: 45.0
-      maximum: 63.0
     max-growth-height:
       cactus: 3
       reeds: 3
@@ -101,13 +91,22 @@ world-settings:
       hard: 128
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
-    water-over-lava-flow-speed: 5
     fast-drain:
       lava: false
       water: false
     lava-flow-speed:
       normal: 30
       nether: 10
+    portal-search-radius: 128
+    queue-light-updates: false
+    optimize-explosions: false
+    use-vanilla-world-scoreboard-name-coloring: false
+    delay-chunk-unloads-by: 10s
+    max-auto-save-chunks-per-tick: 24
+    squid-spawn-height:
+      minimum: 45.0
+      maximum: 63.0
+    water-over-lava-flow-speed: 5
     lootables:
       auto-replenish: false
       restrict-player-reloot: true
@@ -115,3 +114,4 @@ world-settings:
       max-refills: -1
       refresh-min: 12h
       refresh-max: 2d
+    disable-teleportation-suffocation-check: false
