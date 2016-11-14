@@ -13,4 +13,5 @@ Using a Minecraft game allows children to immerse themselves in a world of play,
 
 Having a supportive community and network of friends around them who really get what they are dealing with makes all the difference for children who live with Type 1 Diabetes.
 
-
+## Developers
+Changing this repository (on master) will update the magikcraft/t1-server image and therefore by design the magikcraft/t1-pie image 
